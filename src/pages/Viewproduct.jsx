@@ -1,9 +1,22 @@
+import { useLoaderData, useParams } from "react-router-dom";
+import Viewproducttitle from "../components/Viewproducttitle";
+import { useEffect, useState } from "react";
+import ViewDetailsProduct from "../components/ViewDetailsProduct";
 
 const Viewproduct = () => {
+    const data = useLoaderData()
+    const {id} = useParams()
+    const [viewproduct, setViewproduct] = useState({})
+    useEffect(()=>{
+        const viewproductfind = data.find(viewproducts=> viewproducts.id === id)
+        setViewproduct(viewproductfind)
+    },[data, id])
+
+
     return (
-        
-        <div className="bg-green-400 h-[1000px]">
-            Hellow
+        <div className="">
+           <Viewproducttitle></Viewproducttitle>
+           <ViewDetailsProduct viewproduct= {viewproduct}></ViewDetailsProduct>
         </div>
     );
 };
