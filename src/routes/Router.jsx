@@ -8,6 +8,7 @@ import Viewproduct from "../pages/Viewproduct";
 
 
 
+
 const router = createBrowserRouter([
     {
       path: "/",
@@ -27,12 +28,7 @@ const router = createBrowserRouter([
                 path:"/product/:category",
                 element:<Allcard></Allcard>,
                 loader: ()=>fetch('../../public/gadget.json')
-              },
-              {
-                path:"/product/:id",
-                element:<Viewproduct></Viewproduct>,
-                loader: ()=>fetch('../../public/gadget.json')
-              },
+              }
             ]     
           },
           {
@@ -42,6 +38,11 @@ const router = createBrowserRouter([
         {
           path:"/deshboard",
           element: <Deshboard></Deshboard>
+        },
+        {
+          path:"/products/:id",
+          element: <Viewproduct></Viewproduct>,
+          loader: ()=>fetch('../../public/gadget.json')
         }
 
       ]
