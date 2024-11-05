@@ -4,6 +4,9 @@ import Home from "../pages/Home";
 import Statistics from "../pages/Statistics";
 import Deshboard from "../pages/Deshboard";
 import Allcard from "../components/Allcard";
+import Viewproduct from "../pages/Viewproduct";
+
+
 
 const router = createBrowserRouter([
     {
@@ -16,13 +19,23 @@ const router = createBrowserRouter([
             loader: ()=>fetch('../../public/category.json'),
             children:[
               {
+                path:"/",
+                element:<Allcard></Allcard>,
+                loader: ()=>fetch('../../public/gadget.json')
+              }, 
+              {
                 path:"/product/:category",
                 element:<Allcard></Allcard>,
                 loader: ()=>fetch('../../public/gadget.json')
-              }
+              },
+              {
+                path:"/product/:id",
+                element:<Viewproduct></Viewproduct>,
+                loader: ()=>fetch('../../public/gadget.json')
+              },
             ]     
-        }, 
-        {
+          },
+          {
           path:"/statistic",
           element: <Statistics></Statistics>
         },

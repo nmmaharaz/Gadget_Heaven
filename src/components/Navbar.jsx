@@ -25,19 +25,19 @@ const Navbar = () => {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <NavLink to='/'>Home</NavLink>
-            <NavLink to='/statistic'>Statistic</NavLink>
-           <NavLink to='/deshboard'>Deshboard</NavLink>
+            className="menu menu-sm dropdown-content bg-[#a446f1] rounded-box z-[1] mt-3 w-52 p-2 shadow">
+            <NavLink to='/' className="text-white font-semibold">Home</NavLink>
+            <NavLink to='/statistic' className="text-white font-semibold">Statistic</NavLink>
+           <NavLink to='/deshboard' className="text-white font-semibold">Deshboard</NavLink>
           </ul>
         </div>
-        <a className="btn btn-ghost text-xl"><Link to='/'>Home</Link></a>
+        <a className="btn btn-ghost text-2xl text-white"><Link to='/'>Gadget Heaven</Link></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
-        <NavLink to='/' className="text-white">Home</NavLink>
-            <NavLink to='/statistic' className="px-10 text-white">Statistic</NavLink>
-           <NavLink to='/deshboard' className="text-white">Deshboard</NavLink>
+        <NavLink to='/' className="text-white font-semibold">Home</NavLink>
+            <NavLink to='/statistic' className="px-10 text-white font-semibold">Statistic</NavLink>
+           <NavLink to='/deshboard' className="text-white font-semibold">Deshboard</NavLink>
         </ul>
       </div>
       <div className="navbar-end">
