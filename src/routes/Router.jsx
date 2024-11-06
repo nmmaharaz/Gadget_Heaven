@@ -6,6 +6,7 @@ import Deshboard from "../pages/Deshboard";
 import Allcard from "../components/Allcard";
 import Viewproduct from "../pages/Viewproduct";
 import Cart from "../components/Cart";
+import Wishlist from "../components/Wishlist";
 
 
 
@@ -45,6 +46,10 @@ const router = createBrowserRouter([
              {
               path:"/deshboard/cart",
               element:<Cart></Cart>
+             },
+             {
+              path:"/deshboard/wishlist",
+              element:<Wishlist></Wishlist>
              }
           ] 
         },

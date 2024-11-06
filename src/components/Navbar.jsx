@@ -38,7 +38,7 @@ const Navbar = () => {
         <ul className="menu menu-horizontal px-1 ">
         <NavLink to='/' className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Home</NavLink>
             <NavLink to='/statistic' className={`${pathname == "/" ?"text-white font-semibold px-10":"text-black px-10 font-semibold"}`}>Statistic</NavLink>
-           <NavLink to='/deshboard' className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Deshboard</NavLink>
+           <NavLink to={'/deshboard','/deshboard/cart' } className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Deshboard</NavLink>
         </ul>
       </div>
       <div className="navbar-end">

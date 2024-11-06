@@ -7,7 +7,7 @@ const DeshboardHero = () => {
             <p className='mx-auto text-gray-50 max-w-[800px] text-center py-4'>Explore the latest gadget that will take your experience to the next level. From smart device the coolest accessories, we have it all!</p>
             <div className="flex flex-row justify-center">
             <NavLink to="/deshboard/cart" className='btn bg-white text-xl px-7 rounded-3xl'>Cart</NavLink>
-            <button className='btn bg-white text-xl px-7 rounded-3xl ml-3'>Wishlist</button>
+            <NavLink to="/deshboard/wishlist" className='btn bg-white text-xl px-7 rounded-3xl ml-3'>Wishlist</NavLink>
             </div>
         </div>            
     );

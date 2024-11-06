@@ -1,8 +1,21 @@
+import { AiOutlineCloseCircle } from "react-icons/ai";
 
 const Showcart = ({carts}) => {
     return (
         <div>
-             {carts.id}
+               <div className="flex justify-between  mt-6 p-3 bg-white rounded-xl">
+                <div className="flex">
+                    <img className=" w-[140px] h-[120px]" src={carts.product_image} alt="" />
+                <div className="flex flex-col justify-between ml-7">
+                <h1 className="text-[24px] font-semibold">{carts.product_name}</h1>              
+                <p className="text-gray-500">{carts.description}</p>
+                <h5 className="text-xl font-semibold">Price: ${carts.price}</h5>
+                </div>
+                </div>
+                <div>
+                <AiOutlineCloseCircle  className="mr-7 text-3xl text-red-500 cursor-pointer"/>
+                </div>
+               </div>
         </div>
     );
 };
