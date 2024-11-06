@@ -1,11 +1,29 @@
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
-import { addLocalStorage } from "./LocalStorage";
+import { addLocalStorage, addWishlistLocalStorage, getWishlistLocalStorage } from "./LocalStorage";
+import { useEffect, useState } from "react";
 
 
 const ViewDetailsProduct = ({viewproduct}) => {
   const Addtocart = (viewproduct) =>{
     addLocalStorage(viewproduct)
+  }
+
+  const [wishlistDisable, setWishlistDisable] = useState(false)
+
+  useEffect(()=>{
+    const addWishlist = getWishlistLocalStorage()
+    const verifyWishlist = addWishlist.find(varifyCart => varifyCart.id == viewproduct.id)
+    if(verifyWishlist){
+      setWishlistDisable(true)
+    }else{
+      setWishlistDisable(false)
+    }
+  },[])
+
+  const WishlistProduct = (viewproduct) =>{
+    addWishlistLocalStorage(viewproduct)
+    setWishlistDisable(true)
   }
     return (
             <div className="mx-auto max-w-[1000px] bg-white rounded-2xl">
@@ -32,7 +50,7 @@ const ViewDetailsProduct = ({viewproduct}) => {
     <p className="font-bold flex items-center">Rating <div className="w-3 h-3 bg-black ml-2"></div></p>
     <div className="flex">
     <button onClick={()=>Addtocart(viewproduct)} className="btn flex items-center bg-[#a446f1] text-white font-semibold text-[18px]">Add to Cart <MdOutlineShoppingCart /></button>
-      <button className="btn flex items-center bg-white text-black font-semibold text-[18px] ml-2"><CiHeart /></button>
+      <button disabled={wishlistDisable} onClick={()=>WishlistProduct(viewproduct)} className="btn flex items-center bg-white text-black font-semibold text-[18px] ml-2"><CiHeart/></button>
     
     </div>
     </div>

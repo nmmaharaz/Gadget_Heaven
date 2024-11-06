@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import {getLocalStorage } from "./LocalStorage";
+import {getLocalStorage, removeCartLocalStorage } from "./LocalStorage";
 import Showcart from "./Showcart";
 
 
@@ -9,10 +9,17 @@ const Cart = () => {
         const addtocart = getLocalStorage()
         setCart(addtocart)
     },[])
+
+    const removecart = (carts) =>{
+        removeCartLocalStorage(carts)
+        const addtocart = getLocalStorage()
+        setCart(addtocart)
+    }
+
     return (
         <div>
             {
-                cart.map(carts=><Showcart key={carts.id} carts={carts}></Showcart>)
+                cart.map(carts=><Showcart key={carts.id} removecart={removecart} carts={carts}></Showcart>)
             }
         </div>
     );

@@ -1,6 +1,9 @@
 import { AiOutlineCloseCircle } from "react-icons/ai";
 
-const Showcart = ({carts}) => {
+
+
+const Showcart = ({carts, removecart}) => {
+   
     return (
         <div>
                <div className="flex justify-between  mt-6 p-3 bg-white rounded-xl">
@@ -13,7 +16,7 @@ const Showcart = ({carts}) => {
                 </div>
                 </div>
                 <div>
-                <AiOutlineCloseCircle  className="mr-7 text-3xl text-red-500 cursor-pointer"/>
+                <AiOutlineCloseCircle onClick={()=>removecart(carts)} className="mr-7 text-3xl text-red-500 cursor-pointer"/>
                 </div>
                </div>
         </div>

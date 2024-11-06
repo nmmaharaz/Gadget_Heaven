@@ -32,7 +32,7 @@ const Navbar = () => {
            <NavLink to='/deshboard' className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Deshboard</NavLink>
           </ul>
         </div>
-        <a className={`${pathname == "/" ?"text-2xl text-white":"text-2xl text-black"}`}> <Link to='/'>Gadget Heaven</Link></a>
+        <a className={`${pathname == "/" ?"text-2xl font-bold text-white":"text-2xl font-bold text-[#a446f1]"}`}> <Link to='/'>Gadget Heaven</Link></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
