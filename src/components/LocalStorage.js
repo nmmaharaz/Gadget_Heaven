@@ -47,6 +47,7 @@ const getWishlistLocalStorage =()=>{
 const addWishlistLocalStorage =(viewproduct)=>{
     const addWishlist = getWishlistLocalStorage()
     const verifyWishlist = addWishlist.find(varifyCart => varifyCart.id == viewproduct.id)
+
     if(verifyWishlist) return toast.error("This Wishlist already added",{
         position: "top-center"
     })
@@ -58,10 +59,10 @@ const addWishlistLocalStorage =(viewproduct)=>{
 }
 
 
-const removeWishlistCartLocalStorage = (carts) =>{
+const removeWishlistCartLocalStorage = (wish) =>{
     const wishListAdd = getWishlistLocalStorage()
-    const removeWishlistData = wishListAdd.filter(c => c.id != carts.id)
-    localStorage.setItem('cart', JSON.stringify(removeWishlistData))
+    const removeWishlistData = wishListAdd.filter(c => c.id != wish.id)
+    localStorage.setItem('wishlist', JSON.stringify(removeWishlistData))
     toast.success("Item remove to wishlist",{
         position: "top-center"
     })

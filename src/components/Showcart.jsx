@@ -6,7 +6,7 @@ const Showcart = ({carts, removecart}) => {
    
     return (
         <div>
-               <div className="flex justify-between  mt-6 p-3 bg-white rounded-xl">
+               <div className="flex justify-between  my-6 p-3 bg-white rounded-xl">
                 <div className="flex">
                     <img className=" w-[140px] h-[120px]" src={carts.product_image} alt="" />
                 <div className="flex flex-col justify-between ml-7">
