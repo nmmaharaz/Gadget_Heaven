@@ -5,6 +5,9 @@ import Statistics from "../pages/Statistics";
 import Deshboard from "../pages/Deshboard";
 import Allcard from "../components/Allcard";
 import Viewproduct from "../pages/Viewproduct";
+import Cart from "../components/Cart";
+
+
 
 
 
@@ -37,7 +40,13 @@ const router = createBrowserRouter([
         },
         {
           path:"/deshboard",
-          element: <Deshboard></Deshboard>
+          element: <Deshboard></Deshboard>,
+          children:[
+             {
+              path:"/deshboard/cart",
+              element:<Cart></Cart>
+             }
+          ] 
         },
         {
           path:"/products/:id",

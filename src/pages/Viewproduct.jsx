@@ -2,6 +2,7 @@ import { useLoaderData, useParams } from "react-router-dom";
 import Viewproducttitle from "../components/Viewproducttitle";
 import { useEffect, useState } from "react";
 import ViewDetailsProduct from "../components/ViewDetailsProduct";
+import ViewProductHero from "../components/ViewProductHero";
 
 const Viewproduct = () => {
     const data = useLoaderData()
@@ -15,6 +16,7 @@ const Viewproduct = () => {
 
     return (
         <div className="">
+            <ViewProductHero></ViewProductHero>
            <Viewproducttitle></Viewproducttitle>
            <ViewDetailsProduct viewproduct= {viewproduct}></ViewDetailsProduct>
         </div>
