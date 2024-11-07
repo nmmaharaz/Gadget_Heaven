@@ -3,7 +3,7 @@ import {getLocalStorage, removeCartLocalStorage } from "./LocalStorage";
 import Showcart from "./Showcart";
 import { FaSortNumericDownAlt } from "react-icons/fa";
 import modalimage from '../assets/Group.png'
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 
 const Cart = () => {
@@ -30,10 +30,13 @@ const Cart = () => {
         setCart(sorted)
     }
 
+    const navigate = useNavigate()
+
     const handleclosedata = () =>{
         localStorage.removeItem('cart')
         const closeData = getLocalStorage()
         setCart(closeData)
+        navigate('/')
     }
 
     return (
@@ -55,7 +58,7 @@ const Cart = () => {
                             <p className="text-center">Total: {total}</p>
                             <div className="modal-action flex justify-center">
                             <form method="dialog">
-                                <Link to='/' onClick={handleclosedata} className="btn px-[80px] rounded-3xl">Close</Link>
+                                <button onClick={handleclosedata} className="btn px-[80px] rounded-3xl">Close</button>
                             </form>
                             </div>
                         </div>

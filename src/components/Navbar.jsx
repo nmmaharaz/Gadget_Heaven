@@ -1,14 +1,14 @@
 import { Link, NavLink, useLocation} from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
-import { getWishlistLocalStorage } from "./LocalStorage";
+
 
 const Navbar = () => {
     const {pathname} = useLocation()
-    const wishlisttotal = getWishlistLocalStorage()
+   
     return (
       <div className="m-3">
-        <div className={`${pathname == "/" || pathname == "/product/Computers" || pathname == "/product/Phones" || pathname == "/product/Smart%20Watches" || pathname == "/product/Chargers"||pathname == "/product/Power%20Banks" ?"bg-[#9538e2] navbar pt-2 pb-[650px] rounded-xl":"bg-white navbar py-3"}`}>
+        <div className={`${pathname == "/" || pathname == "/product/Computers" || pathname == "/product/Phones" || pathname == "/product/Smart%20Watches" || pathname == "/product/Chargers"||pathname == "/product/Power%20Banks" ?"bg-[#9538e2] navbar pt-2 pb-[500px] sm:pb-[500px] lg:pb-[650px] rounded-xl":"bg-white navbar py-3"}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -43,8 +43,8 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="navbar-end">
-      <div><MdOutlineShoppingCart  className={`${pathname == "/" ?"text-white  text-3xl text-gray-800 bg-white rounded-full p-1 font-semibold":"text-black text-3xl text-gray-800 border border-solid border-gray-400 rounded-full p-1 font-semibold"}`}/></div>
-         <p><FaRegHeart className={`${pathname == "/" ?" text-3xl text-gray-800 bg-white rounded-full p-1 font-semibold mx-5":"text-black text-3xl text-gray-800 border border-solid border-gray-400 rounded-full p-1 font-semibold mx-5"}`}/></p>
+      <div><MdOutlineShoppingCart  className={`${pathname == "/" ?"text-4xl text-gray-800 bg-white rounded-full p-1 font-semibold": "text-4xl text-gray-800 border border-solid border-gray-400 rounded-full p-1 font-semibold"}`}/></div>
+         <p><FaRegHeart className={`${pathname == "/" ?" text-4xl text-gray-800 bg-white rounded-full p-1 font-semibold mx-5":" text-4xl text-gray-800 border border-solid border-gray-400 rounded-full p-1 font-semibold mx-5"}`}/></p>
         <div>
         </div>
       </div>
