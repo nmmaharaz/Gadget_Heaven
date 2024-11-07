@@ -1,10 +1,11 @@
 import { Link, NavLink, useLocation} from "react-router-dom";
 import { MdOutlineShoppingCart } from "react-icons/md";
+import { FaRegHeart } from "react-icons/fa6";
+import { getWishlistLocalStorage } from "./LocalStorage";
 
 const Navbar = () => {
     const {pathname} = useLocation()
-    console.log(pathname)
-
+    const wishlisttotal = getWishlistLocalStorage()
     return (
       <div className="m-3">
         <div className={`${pathname == "/" || pathname == "/product/Computers" || pathname == "/product/Phones" || pathname == "/product/Smart%20Watches" || pathname == "/product/Chargers"||pathname == "/product/Power%20Banks" ?"bg-[#9538e2] navbar pt-2 pb-[650px] rounded-xl":"bg-white navbar py-3"}`}>
@@ -13,7 +14,7 @@ const Navbar = () => {
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg
               xmlns="http://www.w3.org/2000/svg"
-              className="h-5 w-5"
+              className="h-5 text-white w-5"
               fill="none"
               viewBox="0 0 24 24"
               stroke="currentColor">
@@ -27,22 +28,23 @@ const Navbar = () => {
           <ul
             tabIndex={0}
             className="menu menu-sm dropdown-content bg-[#a446f1] rounded-box z-[1] mt-3 w-52 p-2 shadow">
-            <NavLink to='/' className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Home</NavLink>
-            <NavLink to='/statistic' className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Statistic</NavLink>
-           <NavLink to='/deshboard' className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Deshboard</NavLink>
+            <NavLink to='/' className={`${pathname == "/" ?"text-white cursor-pointer font-semibold":"text-black font-semibold"}`}>Home</NavLink>
+            <NavLink to='/statistic' className={`${pathname == "/" ?"text-white cursor-pointer font-semibold":"text-black font-semibold"}`}>Statistic</NavLink>
+           <NavLink to='/deshboard' className={`${pathname == "/" ?"text-white cursor-pointer font-semibold":"text-black font-semibold"}`}>Deshboard</NavLink>
           </ul>
         </div>
-        <a className={`${pathname == "/" ?"text-2xl font-bold text-white":"text-2xl font-bold text-[#a446f1]"}`}> <Link to='/'>Gadget Heaven</Link></a>
+        <a className={`${pathname == "/" ? "text-2xl font-bold text-white" :"text-2xl font-bold text-[#a446f1]"}`}> <Link to='/'>Gadget Heaven</Link></a>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
-        <NavLink to='/' className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Home</NavLink>
-            <NavLink to='/statistic' className={`${pathname == "/" ?"text-white font-semibold px-10":"text-black px-10 font-semibold"}`}>Statistic</NavLink>
-           <NavLink to={'/deshboard','/deshboard/cart' } className={`${pathname == "/" ?"text-white font-semibold":"text-black font-semibold"}`}>Deshboard</NavLink>
+        <NavLink to='/' className={`${pathname == "/" ?" py-2 text-white cursor-pointer font-semibold":"text-black py-2 font-semibold"}`}>Home</NavLink>
+            <NavLink to='/statistic' className={`${pathname == "/" ?"text-white py-2 cursor-pointer font-semibold px-10":"text-black py-2 px-10 font-semibold"}`}>Statistic</NavLink>
+           <NavLink to={'/deshboard','/deshboard/cart' } className={`${pathname == "/" ?"text-white py-2 cursor-pointer font-semibold":"text-black py-2 font-semibold"}`}>Deshboard</NavLink>
         </ul>
       </div>
       <div className="navbar-end">
-      <MdOutlineShoppingCart />
+      <div><MdOutlineShoppingCart  className={`${pathname == "/" ?"text-white  text-3xl text-gray-800 bg-white rounded-full p-1 font-semibold":"text-black text-3xl text-gray-800 border border-solid border-gray-400 rounded-full p-1 font-semibold"}`}/></div>
+         <p><FaRegHeart className={`${pathname == "/" ?" text-3xl text-gray-800 bg-white rounded-full p-1 font-semibold mx-5":"text-black text-3xl text-gray-800 border border-solid border-gray-400 rounded-full p-1 font-semibold mx-5"}`}/></p>
         <div>
         </div>
       </div>

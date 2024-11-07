@@ -1,9 +1,12 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { getWishlistLocalStorage, removeWishlistCartLocalStorage } from "./LocalStorage";
 import Showwishlist from "./Showwishlist";
 
 const Wishlist = () => {
     const [wishlist, setWishlist]=useState([])
+
+    const value = useContext(wishlist)
+
     useEffect(()=>{
         const addwishlist = getWishlistLocalStorage()
         setWishlist(addwishlist)

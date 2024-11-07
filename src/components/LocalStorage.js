@@ -68,4 +68,8 @@ const removeWishlistCartLocalStorage = (wish) =>{
     })
 }
 
+
+
+
+
 export {addLocalStorage, getLocalStorage, removeCartLocalStorage, getWishlistLocalStorage, addWishlistLocalStorage, removeWishlistCartLocalStorage }

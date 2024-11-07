@@ -9,7 +9,7 @@ const Home = () => {
     // console.log(info.categories)
     return (
         <div>
-            <Hero></Hero>  
+                <Hero></Hero>
                 <div className="pt-9 text-center text-[40px] font-bold mt-[275px]">Explore Cutting-Edge Gadgets</div>
                 <div className="w-10/12 mx-auto lg:flex ">
                 <div className="lg:w-2/12 mb-6 lg:mr-6 mt-6"><Category categories={info.categories}></Category></div>
