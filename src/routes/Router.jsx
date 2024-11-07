@@ -44,7 +44,7 @@ const router = createBrowserRouter([
           element: <Deshboard></Deshboard>,
           children:[
              {
-              path:"/deshboard/cart",
+              path:"/deshboard",
               element:<Cart></Cart>
              },
              {

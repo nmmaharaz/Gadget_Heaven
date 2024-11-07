@@ -37,9 +37,13 @@ const Navbar = () => {
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1 ">
-        <NavLink to='/' className={`${pathname == "/" ?" py-2 text-white cursor-pointer font-semibold":"text-black py-2 font-semibold"}`}>Home</NavLink>
+         <NavLink to='/' className={({ isActive }) => 
+        `${isActive && pathname === "/" 
+          ? "text-white bg-[#410571] rounded-2xl px-5 py-2 cursor-pointer font-semibold" 
+          : "text-black py-2 font-semibold"
+        }`}>Home</NavLink>
             <NavLink to='/statistic' className={`${pathname == "/" ?"text-white py-2 cursor-pointer font-semibold px-10":"text-black py-2 px-10 font-semibold"}`}>Statistic</NavLink>
-           <NavLink to={'/deshboard','/deshboard/cart' } className={`${pathname == "/" ?"text-white py-2 cursor-pointer font-semibold":"text-black py-2 font-semibold"}`}>Deshboard</NavLink>
+           <NavLink to={'/deshboard' } className={ `${pathname == "/" ?"text-white py-2 cursor-pointer font-semibold":"text-black py-2 font-semibold"}`}>Deshboard</NavLink>
         </ul>
       </div>
       <div className="navbar-end">

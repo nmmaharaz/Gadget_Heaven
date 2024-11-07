@@ -7,7 +7,7 @@
         "category": "Computers",
         "price": 1299.99,
         "description": "A high-performance laptop with 15-inch display and 10-hour battery life.",
-        "Specification": ["15.6-inch display", "16GB RAM", "512GB SSD", "Intel i7 Processor"],
+        "specification": ["15.6-inch display", "16GB RAM", "512GB SSD", "Intel i7 Processor"],
         "availability": true,
         "rating": 4.5
       },
@@ -18,7 +18,7 @@
         "category": "Computers",
         "price": 899.99,
         "description": "Lightweight laptop perfect for portability and everyday use.",
-        "Specification": ["13.3-inch display", "8GB RAM", "256GB SSD", "Intel i5 Processor"],
+        "specification": ["13.3-inch display", "8GB RAM", "256GB SSD", "Intel i5 Processor"],
         "availability": true,
         "rating": 4.3
       },
@@ -29,7 +29,7 @@
         "category": "Computers",
         "price": 1599.99,
         "description": "Gaming laptop with powerful graphics card and high refresh rate display.",
-        "Specification": ["15.6-inch display", "16GB RAM", "1TB SSD", "NVIDIA RTX 3060"],
+        "specification": ["15.6-inch display", "16GB RAM", "1TB SSD", "NVIDIA RTX 3060"],
         "availability": false,
         "rating": 4.7
       },
@@ -40,7 +40,7 @@
         "category": "Computers",
         "price": 1799.99,
         "description": "Professional-grade laptop for developers and power users.",
-        "Specification": ["17-inch display", "32GB RAM", "1TB SSD", "AMD Ryzen 9"],
+        "specification": ["17-inch display", "32GB RAM", "1TB SSD", "AMD Ryzen 9"],
         "availability": true,
         "rating": 4.8
       },
@@ -51,7 +51,7 @@
         "category": "Computers",
         "price": 649.99,
         "description": "Affordable laptop for students with reliable performance.",
-        "Specification": ["14-inch display", "4GB RAM", "128GB SSD", "Intel i3 Processor"],
+        "specification": ["14-inch display", "4GB RAM", "128GB SSD", "Intel i3 Processor"],
         "availability": true,
         "rating": 4.1
       },
@@ -62,7 +62,7 @@
         "category": "Computers",
         "price": 2499.99,
         "description": "Desktop replacement laptop for creative professionals.",
-        "Specification": ["16-inch display", "32GB RAM", "1TB SSD", "NVIDIA RTX 3080"],
+        "specification": ["16-inch display", "32GB RAM", "1TB SSD", "NVIDIA RTX 3080"],
         "availability": false,
         "rating": 4.9
       },
@@ -73,7 +73,7 @@
         "category": "Phones",
         "price": 799.99,
         "description": "Flagship smartphone with stunning display and camera capabilities.",
-        "Specification": ["6.2-inch display", "128GB Storage", "12MP Camera", "4000mAh Battery"],
+        "specification": ["6.2-inch display", "128GB Storage", "12MP Camera", "4000mAh Battery"],
         "availability": true,
         "rating": 4.6
       },
@@ -84,7 +84,7 @@
         "category": "Phones",
         "price": 999.99,
         "description": "5G phone with top-tier processing power and AI-enhanced camera.",
-        "Specification": ["6.7-inch display", "256GB Storage", "16MP Camera", "4500mAh Battery"],
+        "specification": ["6.7-inch display", "256GB Storage", "16MP Camera", "4500mAh Battery"],
         "availability": false,
         "rating": 4.7
       },
@@ -95,7 +95,7 @@
         "category": "Smart Watches",
         "price": 349.99,
         "description": "Advanced health tracking smartwatch with multiple sports modes.",
-        "Specification": ["1.78-inch display", "Heart Rate Monitor", "GPS", "18-hour Battery Life"],
+        "specification": ["1.78-inch display", "Heart Rate Monitor", "GPS", "18-hour Battery Life"],
         "availability": true,
         "rating": 4.8
       },
@@ -106,7 +106,7 @@
         "category": "Smart Watches",
         "price": 299.99,
         "description": "Rugged smartwatch for athletes with water resistance and long battery life.",
-        "Specification": ["1.4-inch display", "Waterproof", "SpO2 Monitor", "24-hour Battery Life"],
+        "specification": ["1.4-inch display", "Waterproof", "SpO2 Monitor", "24-hour Battery Life"],
         "availability": true,
         "rating": 4.5
       },
@@ -117,7 +117,7 @@
         "category": "Chargers",
         "price": 59.99,
         "description": "Fast charging adapter with USB-A and USB-C ports.",
-        "Specification": ["USB-A and USB-C Ports", "30W Output", "Overcharge Protection"],
+        "specification": ["USB-A and USB-C Ports", "30W Output", "Overcharge Protection"],
         "availability": true,
         "rating": 4.3
       },
@@ -128,7 +128,7 @@
         "category": "Chargers",
         "price": 79.99,
         "description": "Qi-certified wireless charging pad with fast charging capability.",
-        "Specification": ["Qi Wireless", "10W Fast Charge", "LED Indicator"],
+        "specification": ["Qi Wireless", "10W Fast Charge", "LED Indicator"],
         "availability": false,
         "rating": 4.2
       },
@@ -139,7 +139,7 @@
         "category": "Power Banks",
         "price": 69.99,
         "description": "Compact power bank with high capacity and dual output ports.",
-        "Specification": ["10000mAh", "Dual USB Output", "LED Power Indicator"],
+        "specification": ["10000mAh", "Dual USB Output", "LED Power Indicator"],
         "availability": true,
         "rating": 4.5
       },
@@ -150,7 +150,7 @@
         "category": "Power Banks",
         "price": 89.99,
         "description": "High-capacity power bank with fast charging technology.",
-        "Specification": ["20000mAh", "USB-C and USB-A Ports", "Quick Charge 3.0"],
+        "specification": ["20000mAh", "USB-C and USB-A Ports", "Quick Charge 3.0"],
         "availability": true,
         "rating": 4.6
       }
