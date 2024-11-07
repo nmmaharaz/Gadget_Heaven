@@ -7,6 +7,7 @@ import Allcard from "../components/Allcard";
 import Viewproduct from "../pages/Viewproduct";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
+import Contact from "../pages/Contact";
 
 
 
@@ -57,6 +58,11 @@ const router = createBrowserRouter([
           path:"/products/:id",
           element: <Viewproduct></Viewproduct>,
           loader: ()=>fetch('/public/gadget.json')
+        },
+        {
+          path:"/contact",
+          element:<Contact></Contact>,
+          loader:()=>fetch('/public/contact.json')
         }
 
       ]

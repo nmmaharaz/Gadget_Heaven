@@ -1,0 +1,56 @@
+[
+    {
+        "contact_id": 1,
+        "branch_name": "Main Office",
+        "address": "123 Main St, Downtown Business District, City A, State X, 12345, Country Y",
+        "off_day": "Sunday",
+        "laptop_number": "01820-202324",
+        "desktop_number": "01820-202325",
+        "contact_number": "01820-202326"
+    },
+    {
+        "contact_id": 2,
+        "branch_name": "North Branch",
+        "address": "456 North Ave, Northside Industrial Park, City B, State X, 23456, Country Y",
+        "off_day": "Saturday",
+        "laptop_number": "01820-202327",
+        "desktop_number": "01820-202328",
+        "contact_number": "01820-202329"
+    },
+    {
+        "contact_id": 3,
+        "branch_name": "East Branch",
+        "address": "789 East Blvd, Eastview Corporate Center, City C, State X, 34567, Country Y",
+        "off_day": "Sunday",
+        "laptop_number": "01820-202334",
+        "desktop_number": "01820-202335",
+        "contact_number": "01820-202336"
+    },
+    {
+        "contact_id": 4,
+        "branch_name": "South Branch",
+        "address": "321 South St, South Hills Complex, City D, State X, 45678, Country Y",
+        "off_day": "Saturday",
+        "laptop_number": "01820-205324",
+        "desktop_number": "01820-252324",
+        "contact_number": "01820-202424"
+    },
+    {
+        "contact_id": 5,
+        "branch_name": "West Branch",
+        "address": "654 West Ave, Westside Commerce Zone, City E, State X, 56789, Country Y",
+        "off_day": "Friday",
+        "laptop_number": "01820-242324",
+        "desktop_number": "01820-212324",
+        "contact_number": "01821-202324"
+    },
+    {
+        "contact_id": 6,
+        "branch_name": "Central Branch",
+        "address": "987 Central Rd, Central Financial District, City F, State X, 67890, Country Y",
+        "off_day": "Sunday",
+        "laptop_number": "01820-272324",
+        "desktop_number": "01828-202324",
+        "contact_number": "01829-202324"
+    }
+]

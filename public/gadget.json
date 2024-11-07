@@ -9,7 +9,7 @@
         "description": "A high-performance laptop with 15-inch display and 10-hour battery life.",
         "specification": ["15.6-inch display", "16GB RAM", "512GB SSD", "Intel i7 Processor"],
         "availability": true,
-        "rating": 4.5
+        "rating": 4
       },
       {
         "id": "comp002",

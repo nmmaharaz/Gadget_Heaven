@@ -17,8 +17,7 @@ const Viewproduct = () => {
     return (
         <div className="">
             <ViewProductHero></ViewProductHero>
-           <Viewproducttitle></Viewproducttitle>
-           <ViewDetailsProduct viewproduct= {viewproduct}></ViewDetailsProduct>
+            <ViewDetailsProduct viewproduct= {viewproduct}></ViewDetailsProduct>
         </div>
     );
 };

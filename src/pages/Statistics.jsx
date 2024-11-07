@@ -1,7 +1,9 @@
+import StatisticHero from "../components/StatisticHero";
+
 const Statistics = () => {
     return (
         <div>
-            Hellow ami aschi??????????????????????????
+            <StatisticHero></StatisticHero>
         </div>
     );
 };
