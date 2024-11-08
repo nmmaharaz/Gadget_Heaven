@@ -5,7 +5,6 @@ import { FaSortNumericDownAlt } from "react-icons/fa";
 import modalimage from '../assets/Group.png'
 import {useNavigate } from "react-router-dom";
 import { toast } from "react-toastify"
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Cart = () => {
 
@@ -51,10 +50,6 @@ const Cart = () => {
     }
 
     return (
-       <HelmetProvider>
-        <Helmet>
-            <title>Cart || Gadget Heaven</title>
-        </Helmet>
          <div>
             <div className="flex justify-between items-center mt-5">
                 <div>
@@ -87,7 +82,6 @@ const Cart = () => {
                 cart.map(carts=><Showcart key={carts.id} removecart={removecart} carts={carts}></Showcart>)
             }
         </div>
-       </HelmetProvider>
     );
 };
 

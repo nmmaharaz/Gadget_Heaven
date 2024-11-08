@@ -2,7 +2,6 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ViewDetailsProduct from "../components/ViewDetailsProduct";
 import ViewProductHero from "../components/ViewProductHero";
-import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Viewproduct = () => {
     const data = useLoaderData()

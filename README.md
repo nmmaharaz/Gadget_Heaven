@@ -1,3 +1,5 @@
+## Website Link
+https://silver-manatee-fef76c.netlify.app/
 
 ## Requirement Document Link
 https://drive.google.com/file/d/1q2XobTFhcnIurBDXpoelOV1F1h2yREV_/view?usp=sharing
@@ -23,5 +25,4 @@ https://drive.google.com/file/d/1q2XobTFhcnIurBDXpoelOV1F1h2yREV_/view?usp=shari
 
 - Clicking on the dashboard then shows the cart products and wish list products. 
 
-- 
-If the total cost on the card is more than $0 the Purchase button will show otherwise button is disabled.
+- If the total cost on the card is more than $0 the Purchase button will show otherwise button is disabled.
