@@ -1,6 +1,6 @@
 # React + Vite
 ## Requirement Document Link
-file:///E:/B10-A8-gadget-heaven/Batch-10_Assignment-08-.pdf
+https://drive.google.com/file/d/1q2XobTFhcnIurBDXpoelOV1F1h2yREV_/view?usp=sharing
 
 ## React Fundamental concepts used in the project
 - component
