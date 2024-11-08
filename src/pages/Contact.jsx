@@ -16,8 +16,8 @@ const Contact = () => {
             </Helmet>
             <div>
             <ContactHero></ContactHero>
-            <div className="mx-auto w-10/12 grid grid-cols-2 gap-8 mt-5">
-                <div className="flex bg-white p-5 rounded-2xl">
+            <div className="mx-auto w-10/12 grid grid-cols-1 lg:grid-cols-2 gap-5 mt-5">
+                <div className="flex bg-white px-7 py-5 rounded-2xl">
                 <FaPhone className="w-14 h-14 rounded-full text-white bg-[#2b398f] p-2"/>
                 <div className="ml-2">
                     <p className="text-xl text-gray-600">Contact Us</p>
