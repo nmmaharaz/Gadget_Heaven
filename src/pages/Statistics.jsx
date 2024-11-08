@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import StatisticHero from "../components/StatisticHero";
 import ViewStatistic from "../components/ViewStatistic";
-import nodata from '../assets/nodata.png'
 
 const Statistics = () => {
     useEffect(()=>{

@@ -1,5 +1,4 @@
 import { useLoaderData, useParams } from "react-router-dom";
-import Viewproducttitle from "../components/Viewproducttitle";
 import { useEffect, useState } from "react";
 import ViewDetailsProduct from "../components/ViewDetailsProduct";
 import ViewProductHero from "../components/ViewProductHero";

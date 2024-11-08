@@ -23,10 +23,8 @@ const ViewDetailsProduct = ({ viewproduct }) => {
 
   console.log("rating", rating);
 
-  const Addtocart = (viewproduct) => {
-    addLocalStorage(viewproduct);
-  };
 
+  const [addtocartDisable, setAddtoDisable] = useState(false);
   const [wishlistDisable, setWishlistDisable] = useState(false);
 
   useEffect(() => {
@@ -41,18 +39,22 @@ const ViewDetailsProduct = ({ viewproduct }) => {
     }
   }, [viewproduct]);
 
+  const AddtoCartProduct = (viewproduct) => {
+    addLocalStorage(viewproduct);
+    setAddtoDisable(true);
+  };
   const WishlistProduct = (viewproduct) => {
     addWishlistLocalStorage(viewproduct);
     setWishlistDisable(true);
   };
   return (
     <div className="relative">
-      <div className="absolute position top-[450px] mx-auto max-w-[1000px] bg-[#ffffff] rounded-2xl">
+      <div className="absolute position top-[680px] sm:top-[450px] mx-auto max-w-[1000px] bg-[#ffffff] rounded-2xl">
         <div className="">
           <div className="hero-content flex-col lg:flex-row">
             <img src={product_image} className="max-w-[300px] rounded-lg " />
             <div>
-              <h1 className="text-5xl font-bold text-[#a446f1]">
+              <h1 className=" text-3xl sm:text-5xl font-bold text-[#a446f1]">
                 {product_name}
               </h1>
               <p className="py-3 text-xl font-semibold">Price: ${price}</p>
@@ -89,9 +91,9 @@ const ViewDetailsProduct = ({ viewproduct }) => {
                 />
               )}
               <div className="flex">
-                <button
-                  onClick={() => Addtocart(viewproduct)}
-                  className="btn flex items-center bg-[#a446f1] text-white font-semibold text-[18px]"
+                <button disabled={addtocartDisable}
+                  onClick={() => AddtoCartProduct(viewproduct)}
+                  className="btn flex items-center border-none bg-[#a446f1] text-white font-semibold text-[18px]"
                 >
                   Add to Cart <MdOutlineShoppingCart />
                 </button>

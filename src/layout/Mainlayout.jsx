@@ -10,7 +10,7 @@ const MainLayout = () => {
     <div className="bg-[#f7f7f7]">
         <ToastContainer />
         <Navbar></Navbar>
-        <div className='min-h-[calc(100vh-20px)]'>
+        <div className=' min-h-[calc(100vh+150px)] sm:min-h-[calc(100vh-20px)]'>
         <Outlet></Outlet>
         </div>
         <Footer></Footer>

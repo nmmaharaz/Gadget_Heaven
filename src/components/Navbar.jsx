@@ -7,8 +7,8 @@ const Navbar = () => {
     const {pathname} = useLocation()
    
     return (
-      <div className="">
-        <div className={`${pathname == "/" || pathname == "/product/Computers" || pathname == "/product/Phones" || pathname == "/product/Smart%20Watches" || pathname == "/product/Chargers"||pathname == "/product/Power%20Banks" ?"bg-[#9538e2] navbar mt-3 mx-3 pt-2 pb-[500px] sm:pb-[500px] lg:pb-[650px] rounded-xl":"bg-white navbar py-3"}`}>
+      <div className={`${pathname == "/" || pathname == "/product/Computers" || pathname == "/product/Phones" || pathname == "/product/Smart%20Watches" || pathname == "/product/Chargers"||pathname == "/product/Power%20Banks" ?"mt-3 mx-3":"mt-0 mx-0"}`}>
+        <div className={`${pathname == "/" || pathname == "/product/Computers" || pathname == "/product/Phones" || pathname == "/product/Smart%20Watches" || pathname == "/product/Chargers"||pathname == "/product/Power%20Banks" ?"bg-[#9538e2] navbar pt-2 pb-[500px] sm:pb-[500px] lg:pb-[650px] rounded-xl":"bg-white navbar py-3"}`}>
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
