@@ -1,5 +1,6 @@
 import { useState } from "react";
 import {Link, NavLink } from "react-router-dom";
+import PropTypes from "prop-types";
 
 const Category = ({categories}) => {
 
@@ -28,5 +29,9 @@ const Category = ({categories}) => {
         </div>
     );
 };
+
+Category.propTypes = {
+    categories: PropTypes.array,
+  };
 
 export default Category;

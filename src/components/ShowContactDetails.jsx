@@ -1,7 +1,7 @@
 import PropTypes from "prop-types";
 
 const ShowContactDetails = ({contact}) => {
-     const{contact_id, branch_name, address, off_day, laptop_number, desktop_number,contact_number} = contact
+     const{branch_name, address, off_day, laptop_number, desktop_number,contact_number} = contact
     return (
         <div className="mx-auto w-10/12 grid grid-cols-1 lg:grid-cols-2 bg-white my-5 p-5 rounded-2xl">
             <div className="flex flex-col pb-3 lg-pb-0">

@@ -4,7 +4,6 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import Navbar from "../components/Navbar";
 
-
 const MainLayout = () => {
     return (
     <div className="bg-[#f7f7f7]">

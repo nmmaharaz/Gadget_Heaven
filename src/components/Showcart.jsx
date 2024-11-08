@@ -1,5 +1,5 @@
 import { AiOutlineCloseCircle } from "react-icons/ai";
-
+import PropTypes from "prop-types";
 
 
 const Showcart = ({carts, removecart}) => {
@@ -22,5 +22,10 @@ const Showcart = ({carts, removecart}) => {
         </div>
     );
 };
+
+Showcart.propTypes = {
+    carts: PropTypes.array,
+    removecart: PropTypes.object
+  };
 
 export default Showcart;

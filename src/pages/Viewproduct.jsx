@@ -2,19 +2,21 @@ import { useLoaderData, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import ViewDetailsProduct from "../components/ViewDetailsProduct";
 import ViewProductHero from "../components/ViewProductHero";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 const Viewproduct = () => {
     const data = useLoaderData()
-    const {id} = useParams()
+    const {product_name} = useParams()
+    console.log("Hellow mama", product_name)
     const [viewproduct, setViewproduct] = useState({})
     useEffect(()=>{
-        const viewproductfind = data.find(viewproducts=> viewproducts.id === id)
+        const viewproductfind = data.find(viewproducts=> viewproducts.product_name === product_name)
         setViewproduct(viewproductfind)
-    },[data, id])
+    },[data, product_name])
 
 
     return (
-        <div className="">
+         <div className="">
             <ViewProductHero></ViewProductHero>
             <ViewDetailsProduct viewproduct= {viewproduct}></ViewDetailsProduct>
         </div>

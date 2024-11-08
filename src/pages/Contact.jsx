@@ -3,18 +3,18 @@ import ContactHero from "../components/ContactHero";
 import ShowContactDetails from "../components/ShowContactDetails";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
-import { useEffect } from "react";
+import { Helmet, HelmetProvider } from "react-helmet-async";
 
 
 const Contact = () => {
     const data = useLoaderData()
-    useEffect(()=>{
-        document.title = "Gadget Heaven"
-        document.title = "Contact || " + document.title
-    })
-    
+ 
     return (
-        <div>
+        <HelmetProvider>
+            <Helmet>
+                <title>Contact || Gadget Heaven</title>
+            </Helmet>
+            <div>
             <ContactHero></ContactHero>
             <div className="mx-auto w-10/12 grid grid-cols-2 gap-8 mt-5">
                 <div className="flex bg-white p-5 rounded-2xl">
@@ -39,6 +39,7 @@ const Contact = () => {
                 }
             </div>
         </div>
+        </HelmetProvider>
     );
 };
 

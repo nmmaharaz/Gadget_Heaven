@@ -23,6 +23,9 @@ const ViewDetailsProduct = ({ viewproduct }) => {
 
   console.log("rating", rating);
 
+   useEffect(()=>{
+        document.title = product_name + " || Gadget Heaven"
+    })
 
   const [addtocartDisable, setAddtoDisable] = useState(false);
   const [wishlistDisable, setWishlistDisable] = useState(false);
@@ -48,7 +51,7 @@ const ViewDetailsProduct = ({ viewproduct }) => {
     setWishlistDisable(true);
   };
   return (
-    <div className="relative">
+     <div className="relative">
       <div className="absolute position top-[680px] sm:top-[450px] mx-auto max-w-[1000px] bg-[#ffffff] rounded-2xl">
         <div className="">
           <div className="hero-content flex-col lg:flex-row">
