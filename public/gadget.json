@@ -89,6 +89,39 @@
         "rating": 4.7
       },
       {
+        "id": "phone003",
+        "product_name": "VisionPro 12 Ultra",
+        "product_image": "https://i.ibb.co.com/SywT00K/Vision-Pro-12-Ultra.png",
+        "category": "Phones",
+        "price": 1099.99,
+        "description": "Ultra-clear display and next-gen processor with powerful AI enhancements.",
+        "specification": ["6.8-inch display", "512GB Storage", "48MP Camera", "5000mAh Battery"],
+        "availability": true,
+        "rating": 1
+      },
+      {
+        "id": "watch003",
+        "product_name": "UrbanLife Smart",
+        "product_image": "https://i.ibb.co.com/PtCjBW7/Urban-Life-Smart.jpg",
+        "category": "Smart Watches",
+        "price": 199.99,
+        "description": "Stylish smartwatch with essential features for urban users.",
+        "specification": ["1.5-inch display", "Pedometer", "Sleep Tracking", "20-hour Battery Life"],
+        "availability": true,
+        "rating": 4.3
+      },
+      {
+        "id": "watch004",
+        "product_name": "AdventureTrack Pro",
+        "product_image": "https://i.ibb.co.com/KmwtFk3/Adventure-Track-Pro.jpg",
+        "category": "Smart Watches",
+        "price": 279.99,
+        "description": "Outdoor smartwatch with GPS and durable build for adventurers.",
+        "specification": ["1.6-inch display", "GPS", "Altimeter", "30-hour Battery Life"],
+        "availability": false,
+        "rating": 4.6
+      },
+      {
         "id": "watch001",
         "product_name": "HealthWatch Series 7",
         "product_image": "https://i.ibb.co.com/vz2cMq1/Health-Watch-Series-7.jpg",
@@ -131,6 +164,17 @@
         "specification": ["Qi Wireless", "10W Fast Charge", "LED Indicator"],
         "availability": false,
         "rating": 4.2
+      },
+      {
+        "id": "charger003",
+        "product_name": "PowerHub Multi-Port",
+        "product_image": "https://i.ibb.co.com/Jv5VFM7/Power-Hub-Multi-Port.jpg",
+        "category": "Chargers",
+        "price": 69.99,
+        "description": "Multi-port charger with high-speed charging for multiple devices.",
+        "specification": ["4 USB Ports", "45W Output", "Compact Design"],
+        "availability": true,
+        "rating": 4.4
       },
       {
         "id": "powerbank001",
