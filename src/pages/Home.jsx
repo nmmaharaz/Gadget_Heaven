@@ -3,10 +3,15 @@ import { Outlet, useLoaderData } from "react-router-dom";
 import Allcard from "../components/Allcard";
 import Category from "../components/Category";
 import Hero from "../components/Hero";
+import { useEffect } from "react";
 
 const Home = () => {
     const info = useLoaderData()
-    // console.log(info.categories)
+    useEffect(()=>{
+        document.title = "Gadget Heaven"
+        document.title = "Home || " + document.title
+    })
+
     return (
         <div>
                 <Hero></Hero>

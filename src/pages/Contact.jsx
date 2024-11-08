@@ -3,11 +3,15 @@ import ContactHero from "../components/ContactHero";
 import ShowContactDetails from "../components/ShowContactDetails";
 import { FaPhone } from "react-icons/fa6";
 import { MdEmail } from "react-icons/md";
+import { useEffect } from "react";
 
 
 const Contact = () => {
     const data = useLoaderData()
-    console.log(data)
+    useEffect(()=>{
+        document.title = "Gadget Heaven"
+        document.title = "Contact || " + document.title
+    })
     
     return (
         <div>

@@ -8,16 +8,14 @@ import Viewproduct from "../pages/Viewproduct";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
 import Contact from "../pages/Contact";
-
-
-
-
+import Error from "../components/Error";
 
 
 const router = createBrowserRouter([
     {
       path: "/",
       element: <MainLayout></MainLayout>,
+      errorElement:<Error></Error>,
       children:[
         {
             path: "/",
