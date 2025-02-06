@@ -3,24 +3,6 @@
 ## Introduction
 Gadget Heaven is a seamless, user-centric platform offering a curated collection of the latest gadgets. With easy navigation, users can explore different categories, dive into detailed product specifications, and keep track of their favorite items. Perfect for tech lovers, Gadget Heaven is the go-to place for discovering and enjoying the newest gadgets on the market.
 
-## Table of Contents
-- [Live Demo](https://silver-manatee-fef76c.netlify.app/)
-- [Requirement Document](#requirement-document)
-- [Features](#features)
-- [React Fundamental Concepts Used](#react-fundamental-concepts-used)
-- [Data Management](#data-management)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Dependencies](#dependencies)
-- [Contributors](#contributors)
-- [License](#license)
-
-## Live Demo
-[Project Live Link](#) _(Replace with actual link)_
-
-## Requirement Document
-[Requirement Document Link](#) _(Replace with actual link)_
-
 ## Features
 - **Explore Gadgets**: Users can browse a collection of gadgets sorted into categories, with detailed information available for each item.
 - **Save Favorites**: Users can click on the heart icon to save their favorite gadgets, making it easy to find and compare them later.
@@ -53,4 +35,4 @@ To run Gadget Heaven locally, follow these steps:
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/gadget-heaven.git
+   https://github.com/nmmaharaz/Gadget_Heaven.git
