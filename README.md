@@ -4,7 +4,7 @@
 Gadget Heaven is a seamless, user-centric platform offering a curated collection of the latest gadgets. With easy navigation, users can explore different categories, dive into detailed product specifications, and keep track of their favorite items. Perfect for tech lovers, Gadget Heaven is the go-to place for discovering and enjoying the newest gadgets on the market.
 
 ## Table of Contents
-- [Live Demo](#live-demo)
+- [Live Demo](https://silver-manatee-fef76c.netlify.app/)
 - [Requirement Document](#requirement-document)
 - [Features](#features)
 - [React Fundamental Concepts Used](#react-fundamental-concepts-used)
